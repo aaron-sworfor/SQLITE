@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.555"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+    <EditText
+        android:id="@+id/etmatricula"
+        android:layout_width="400dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="Matricula"
+        android:inputType="text"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etnombre"
+        android:layout_width="400dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="Nombre"
+        android:inputType="text"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etmatricula" />
+    <EditText
+        android:id="@+id/etapellidop"
+        android:layout_width="400dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="Apellido paterno"
+        android:inputType="text"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etnombre" />
+    <EditText
+        android:id="@+id/etapellidom"
+        android:layout_width="400dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="Apellido materno"
+        android:inputType="text"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etapellidop" />
+
+    <EditText
+        android:id="@+id/etmateria"
+        android:layout_width="400dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="Materia"
+        android:inputType="text"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etapellidom" />
+    <EditText
+        android:id="@+id/etcarrera"
+        android:layout_width="400dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="Carrera"
+        android:inputType="text"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etmateria" />
+    <EditText
+        android:id="@+id/parcial1"
+        android:layout_width="400dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="Parcial 1"
+        android:inputType="text"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etcarrera" />
+    <EditText
+        android:id="@+id/parcial2"
+        android:layout_width="400dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="Parcial 2"
+        android:inputType="text"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/parcial1" />
+    <EditText
+        android:id="@+id/parcial3"
+        android:layout_width="400dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="Parcial 3"
+        android:inputType="text"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/parcial2" />
+
+    <EditText
+        android:id="@+id/promedio"
+        android:layout_width="400dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="Promedio"
+        android:inputType="text"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/parcial3" />
+
+
+
+    <Button
+        android:id="@+id/btninsertar"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="208dp"
+        android:background="#AA2323"
+        android:text="Insertar"
+        android:textColor="#000000"
+        android:textScaleX="1"
+        android:textSize="22sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/promedio" />
+
+    <Button
+        android:id="@+id/btnactualizar"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="56dp"
+        android:background="#AA2323"
+        android:text="Actualizar"
+        android:textColor="#000000"
+        android:textScaleX="1"
+        android:textSize="22sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btninsertar" />
+
+
+    <Button
+        android:id="@+id/btnbuscar"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:layout_marginTop="208dp"
+        android:layout_marginEnd="28dp"
+        android:background="#AA2323"
+        android:text="buscar"
+        android:textColor="#000000"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/promedio" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
